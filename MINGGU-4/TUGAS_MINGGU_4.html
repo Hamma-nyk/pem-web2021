@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TUGAS MINGGU 4</title>
+		<style>
+		body{
+			font-family: arial;
+			margin: 0px;
+			background-color: #f3f1ec;
+		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td, th {
+			font-size: 13px;
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+			background-color: white;
+			font-size: 12sp;
+		}
+		.cok{
+			width:auto;
+		}
+		.center{
+			min-width:1000px;
+			width:1000px;
+			max-width:1000px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		</style>
+    </head>
+    <body>
+	<div class="cok">
+		<form action="HANDLING_TUGAS_MINGGU_4.php" method="post">
+			<table class="center">
+			    <th style="background-color: transparent; text-align: center; border-right: 0px; border-left: 0px; border-top: 0px;" align="center"colspan="6">FORMULIR PPDB JALUR ZONASI TAHUN 2020</th>
+				<tr >
+					<td ><b>NOMOR</b></td>
+					<td colspan="6" ><b>INFO PENDAFTARAN</b></td>
+					
+				</tr>
+				<tr>
+					<td style="text-align: center">1</td>
+					<td style="border-right: 0px;"><label>NISN</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px; " colspan="3"><input type="number" id="nisn" name="nisn"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">2</td>
+					<td style="border-right: 0px;"><label>Asal Sekolah</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px; " colspan="3"><input type="text" id="sekolah" name="sekolah"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">3</td>
+					<td style="border-right: 0px;"><label>Tahun Lulus</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px; border-right: 0px;" colspan="2"><input type="number" id="th_lulus" name="th_lulus"></td>
+					<td style="border-left: 0px; text-align: right;"><i>(Lampirkan fotocopy ijazah) </i></td>
+				</tr>
+				<tr >
+					<td colspan="6"><b>DATA CALON PESERTA</b></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">6</td>
+					<td style="border-right: 0px;"><label>Nama Lengkap</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input style="width:98%;" type="text" id="nama" name="nama"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">7</td>
+					<td style="border-right: 0px;"><label>NIK</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="number" id="nik" name="nik"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">8</td>
+					<td style="border-right: 0px;"><label>Tempat/Tanggal Lahir</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px; border-right: 0px;"><input type="text" id="ttl" name="ttl"></td>
+					<td style="text-align: right; border-left: 0px; border-right: 0px;"><label>Umur</label></td>
+					<td style="border-left: 0px;"><input type="number" id="umur" name="umur"> Tahun</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td colspan="5"><label>Fotocopy Akte Kelahiran Yang Telah Dilegalisir (Di Lampirkan)</label></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">9</td>
+					<td style="border-right: 0px;"><label>Jenis Kelamin</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="kelamim" name="kelamin"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">10</td>
+					<td style="border-right: 0px;"><label>Alamat</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input style="width:98%;" type="text" id="alamat" name="alamat"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">11</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Desa/Kel.</label></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="desa_siswa" name="desa_siswa"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">12</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Kecamatan</label></td>
+					<td style="border-left: 0px; border-right: 0px;"><input type="text" id="kec_siswa" name="kec_siswa"></td>
+					<td style="border-left: 0px;" colspan="3"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">13</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Kabupaten</label></td>
+					<td style="border-left: 0px; border-right: 0px;"><input type="text" id="kab_siswa" name="kab_siswa"></td>
+					<td style="border-left: 0px;" colspan="3"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">14</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Provinsi</label></td>
+					<td style="border-left: 0px; border-right: 0px;"><input type="text" id="prov_siswa" name="prov_siswa"></td>
+					<td style="border-left: 0px;" colspan="3"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">15</td>
+					<td style="border-right: 0px;"><label>Email Aktif</label></td> 
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input style="width:98%;"type="text" id="email" name="email"></td>
+				</tr>
+				<tr >
+					<td colspan="6"><b>DATA ORANG TUA <i> (Lampirkan KK)</b></i></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">16</td>
+					<td style="border-right: 0px;"><label>Nomor Kartu Keluarga</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="number" id="kk" name="kk"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">17</td>
+					<td style="border-right: 0px;"><label>Nama Ayah Kandung</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="nama_ayah" name="nama_ayah"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">18</td>
+					<td style="border-right: 0px;"><label>Agama</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="agama_ayah" name="agama_ayah"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">19</td>
+					<td style="border-right: 0px;"><label>Pekerjaan</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="pekerjaan_ayah" name="pekerjaan_ayah"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">20</td>
+					<td style="border-right: 0px;"><label>Nama Ibu Kandung</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="nama_ibu" name="nama_ibu"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">21</td>
+					<td style="border-right: 0px;"><label>Agama</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="agama_ibu" name="agama_ibu"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">22</td>
+					<td style="border-right: 0px;"><label>Pekerjaan</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="pekerjaan_ibu" name="pekerjaan_ibu"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">23</td>
+					<td style="border-right: 0px;"><label>Alamat Orang Tua</label></td>
+					<td style="border-left: 0px; border-right: 0px;"></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" style="width:98%;" id="alamat_ortu" name="alamat_ortu"></td>
+				</tr>
+					<td style="text-align: center">24</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Desa/Kel.</label></td>
+					<td style="border-left: 0px;" colspan="3"><input type="text" id="desa_ortu" name="desa_ortu"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">25</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Kecamatan</label></td>
+					<td style="border-left: 0px; border-right: 0px;"><input type="text" id="kec_ortu" name="kec_ortu"></td>
+					<td style="border-left: 0px;" colspan="3"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">26</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Kabupaten</label></td>
+					<td style="border-left: 0px; border-right: 0px;"><input type="text" id="kab_ortu" name="kab_ortu"></td>
+					<td style="border-left: 0px;" colspan="3"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">27</td>
+					<td style="border-right: 0px"></td>
+					<td style="border-left: 0px; border-right: 0px;"><label>Provinsi</label></td>
+					<td style="border-left: 0px; border-right: 0px;"><input type="text" id="prov_ortu" name="prov_ortu"></td>
+					<td style="border-left: 0px;" colspan="3"></td>
+				</tr>
+				<th style="background-color: transparent; text-align: center; border:0px;" align="center"colspan="6">PASTIKAN DATA YANG DIISI SESUAI</th>
+			</table>
+			<table style="border: 0px;"class="center">
+				<tr>
+                    <td style="background-color: transparent; border: 0px; text-align:center;"align="center"><input style="margin-right: 5px;" type="submit" name="submit" value="Submit/Kirim"><input style="margin-left: 5px;" type="reset" name="reset" value="Cancel/Batal"></td>
+                </tr>
+			</table>
+		</form>
+	</div>
+    </body>
+</html>

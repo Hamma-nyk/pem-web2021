@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LATIHAN MINGGU 4</title>
+		<style>
+		body{
+			font-family: arial;
+			margin: 0px;
+			background-color: #f3f1ec;
+		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td, th {
+			font-size: 13px;
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+			background-color: white;
+			font-size: 12sp;
+		}
+		.cok{
+			width:auto;
+		}
+		.center{
+			min-width:1000px;
+			width:1000px;
+			max-width:1000px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		</style>
+    </head>
+    <body>
+	<div class="cok">
+		<form action="HANDLING_LATIHAN_MINGGU_4.php" method="post">
+			<table class="center">
+			    <th style="background-color: transparent; text-align: center; border-right: 0px; border-left: 0px; border-top: 0px;" align="center"colspan="6">LATIHAN FORM</th>
+				<tr>
+					<td><label>NIM :</label></td>
+					<td><input type="text" name="nim"></td>
+				</tr>
+				<tr>
+					<td><label>NAMA :</label></td>
+					<td><input type="text" name="nama"></td>
+				</tr>
+				<tr>
+					<td><label>Program Studi :</label></td>
+					<td>
+						<select name="prodi">
+							<option value="">::Pilih Prodi::</option>
+							<option value="TI">Teknik Informatika</option>
+							<option value="SI">Sistem Informasi</option>
+							<option value="DKV">Desain Komunikasi Visual</option>
+							<option value="ILKOM">Ilmu Komunikasi</option>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Warna Kesukaan :</label></td>
+					<td><input type="color" name="color"></td>
+				</tr>
+				<tr>
+					<td><label>Jenis Kelamin :</label></td>
+					<td><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</td>		
+				</tr>
+			</table>
+			<table style="border: 0px;"class="center">
+				<tr>
+                    <td style="background-color: transparent; border: 0px; text-align:center;"align="center"><input style="margin-right: 5px;" type="submit" name="submit" value="Submit/Kirim"><input style="margin-left: 5px;" type="reset" name="reset" value="Cancel/Batal"></td>
+                </tr>
+			</table>
+		</form>
+	</div>
+    </body>
+</html>
