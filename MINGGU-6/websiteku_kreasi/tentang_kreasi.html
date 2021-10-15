@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>Tugas Minggu 6</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				list-style: none;
+				text-decoration: none;
+				font-family: arial;
+			}
+			body{
+				background-color: #cccccc;
+			}
+			.wrapper{
+				display: flex;
+				position: relative;
+			}
+			.wrapper .sidebar{
+				position: fixed;
+				width: 200px;
+				height: 100%;
+				background: #444444;
+				padding: 30px 0;
+			}
+			.wrapper .sidebar h2{
+				color: white;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.wrapper .sidebar ul li{
+				padding: 10px;
+				margin: 10px;
+				background: #666666;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+			.wrapper .sidebar ul li a{ 
+				display: block;
+				color: white;
+			}
+			.wrapper .sidebar ul li:hover{
+				background: #e6e6e6;
+			}
+			.wrapper .sidebar ul li:hover a{ 
+				color: black;
+			}
+			.wrapper .sidebar hr{
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+			.dasbor_atas{
+				box-shadow: 0px 0px 7px 0px #888888;
+				background: #e6e6e6;
+				border-radius: 10px;
+				max-width:600px;
+			}
+			.comment{
+				margin-top: 10px; 
+				margin-bottom: 10px;
+				float: left;
+				width: 100%;
+				height: auto;
+			}
+			.textinput{
+				padding:5px;
+				float: left;
+				width: 100%;
+				min-height: 75px;
+				outline: none;
+				resize: none;
+				border: 1px solid grey;
+			}
+		</style>
+		<link rel="shorcut icon" href="./favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<head>
+	<body>
+		<div class="wrapper">
+			<div class="sidebar">
+				<h2>Websiteku</h2>
+				<ul>
+					<li><a href="./index_kreasi.html">Home</a></li>
+					<li><a href="./cv-myikos.pdf">Download CV</a></li>
+					<li><a href="./kontak_kreasi.html">Contact</a></li>
+					<li><a href="./tentang_kreasi.html">About me</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="dasbor_atas" style="text-align: left; margin-left: 220px; margin-top: 20px; margin-right: 20px;">
+			<h2 style="padding-left: 20px; padding-top: 20px;">Tentang Saya</h2>
+			<br />
+			<p style="padding-left: 20px; padding-right: 20px; padding-top: 10px;">Hi, saya adalah web developer pemula dan masih belajar.</p>
+			<br />
+			<p style="padding-left: 20px; padding-right: 20px; padding-top: 10px;">Saya memang masih baru dalam web development, karena itu saya tidak akan pernah berhenti belajar</p>
+			<br />
+			<p style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 20px;">Saya ingin menguasai bahasa HTML, CSS, dan Javascript. Simak video lengkap tentang saya :</p>
+			<video style="border: 2px solid black; margin-left: 20px;" width="372" height="280" controls>
+				<source src="./video-about.webm" type="video/webm">	
+			</video>
+			<p style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px;"></p>
+		</div>				
+	</body>
+</html>
