@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contoh Selector Attribut</title>
+	</head>
+	<body>
+		<style type="text/css">
+			/* SELECTOR CLASS */
+			.red{
+				background: red;
+				font-family: sans;
+				color: white;
+				padding: 5px;
+			}
+			
+			/* SELECTOR ID */
+			#header{
+				background: teal;
+				color: white;
+				height: 100px;
+				padding: 50px;
+			}
+			
+			/* SELECTOR ATRIBUT */
+			input[type=text] {
+				background: none;
+				color: cyan;
+				padding: 10px;
+				border: 1px solid cyan;
+			}
+		</style>
+		<header id="header"> <!-- SELECTOR ID -->
+			<h1>Halo...</h1>
+		</header>
+		<p>Saya sedang belajar selector CSS menggunakan <b class="red">Attribut</b></p> <!-- SELECTOR CLASS -->
+		<input type="text" placeholder="Silahkan tulis sesuatu..." /> 	<!-- SELECTOR Atribut -->
+	</body>
+</html>
