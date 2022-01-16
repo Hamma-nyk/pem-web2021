@@ -1,0 +1,240 @@
+.topnav {
+  background-color: #2d2d2d;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.web_name {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.web_name a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  margin: 0;
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  top:25%;
+  left:50%;
+  text-align: center;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 10px 1px 0px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #bbb;
+}
+
+
+/* Slide animation */
+.slide {
+    -webkit-animation-name: slide;
+	-webkit-animation-duration: 1.5s;
+	animation-name: slide;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*.hehew {
+  width: 100%;
+  max-width:100%;
+  overflow-y: hidden;
+}
+
+.child-hehew {
+ background: blue;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 1em;
+}
+*/
+.hehew {
+	margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: center;
+}
+
+.child-hehew {
+	border: 2px solid #cbcbcb;
+	border-radius:8px;
+	background-color: #e9e9e9;
+	text-align:center;
+	height: 300px;
+  width: 400px;
+  margin-top:20px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.materi{
+background-color: #e9e9e9;
+margin-left: 10px; 
+margin-right: 10px; 
+margin-top: 10px; 
+height: 100px;
+}
+
+.scroll {
+    width:100%;
+    max-width: 700px;
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.xxx {
+	border:2px solid black;
+	border-radius: 10px;
+    width:100%;
+    max-width: 700px;
+    height: 360px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.yyy {
+	width:100%;
+    max-width: 800px;
+    height: 260px;
+    overflow: auto;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+.berita{
+	width:100%;
+	height: 260px;
+    overflow: auto;
+}
+
+.konten-berita{
+	margin:10px;
+	border:1px solid #cbcbcb;
+	float:left;
+	width:350px;
+	height:100px;
+}

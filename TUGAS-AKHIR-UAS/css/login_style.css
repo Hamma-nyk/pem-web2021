@@ -1,0 +1,148 @@
+.topnav {
+  background-color: #2d2d2d;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.web_name {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.web_name a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+* {box-sizing:border-box}
+
+form{
+	
+	margin:auto;
+    height: 550px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    /*backdrop-filter: blur(10px);*/
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+   
+    height: 50px;
+    width: 335px;
+    background-color: rgba(255,255,255,0.07);
+	border: 1px solid #606060;
+	border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #606060;
+}
+button{
+    margin-top: 10px;
+    width: 335px;
+    background-color: #ffffff;
+    color: #080710;
+	border: 1px solid #606060;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 20px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border: 1px solid #606060;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #000000;
+  text-align: center;
+}
+.social div:hover{
+  background-color: #80bcff;
+}
+button:hover{
+  background-color: #80bcff;
+}
+.social .fb{
+  margin-left: 25px;
+  text-decoration:none;
+}
+.social i{
+  margin-right: 4px;
+  margin-top:8px;
+  text-decoration:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.ntap a:link {
+	text-decoration:none;
+	color:green;
+}
+
+.ntap a:visited {
+	text-decoration:none;
+	color:green;
+}
+
+.ntap a:actived {
+	text-decoration:none;
+	color:green;
+}
